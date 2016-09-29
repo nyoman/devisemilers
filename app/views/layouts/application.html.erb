@@ -8,7 +8,16 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'layouts/navbar' %>
+<%= bootstrap_flash %>
+<!--<p class="notice"><%= notice %></p>-->
+<!--<p class="alert"><%= alert %></p>-->
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
